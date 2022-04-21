@@ -11,7 +11,7 @@ type UserService struct {
 	pb.UnimplementedUserServiceServer
 }
 
-func NewUserService() *UserServide {
+func NewUserService() *UserService {
 	return &UserService{}
 }
 
