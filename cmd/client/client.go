@@ -166,7 +166,7 @@ func AddUserStreamBoth(client pb.UserServiceClient) {
 				break
 			}
 
-			fmt.Printf("Recebendo user %v com status %v", res.GetUser().GetName(), res.GetStatus())
+			fmt.Printf("Recebendo user %v com status %v\n", res.GetUser().GetName(), res.GetStatus())
 		}
 		close(wait)
 	}()
