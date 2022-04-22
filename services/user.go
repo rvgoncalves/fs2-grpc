@@ -118,5 +118,7 @@ func (*UserService) AddUserStreamBoth(stream pb.UserService_AddUserStreamBothSer
 			log.Fatalf("Error sending stream from de client %v", err)
 		}
 
+		fmt.Println("Receiving:", req.GetName())
+
 	}
 }
