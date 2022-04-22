@@ -18,7 +18,9 @@ func NewUserService() *UserService {
 func (*UserService) AddUser(ctx context.Context, req *pb.User) (*pb.User, error) {
 
 	// Insert - Database
-	fmt.Println(req.Name)
+	fmt.Println("id:", req.Id)
+	fmt.Println("name:", req.Name)
+	fmt.Println("email:", req.Email)
 
 	return &pb.User{
 		Id:    "123",
